@@ -48,7 +48,7 @@ int main() {
     return 0;
 }
 
-
+```
 
 ⏳ Time Complexity
 
@@ -57,6 +57,7 @@ Best Case: O(n) → when the array is already sorted (only one pass required)
 Average Case: O(n²)
 
 Worst Case: O(n²) → when the array is sorted in reverse order
+
 
 💾 Space Complexity
 
