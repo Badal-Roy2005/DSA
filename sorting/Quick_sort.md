@@ -22,16 +22,17 @@ int calPart(vector<int> &a, int low, int high)
     while (left < right)
     {
         // Move left pointer until finding an element greater than pivot
-        while (a[left] <= pivot && left <= high)
+        while ( left <= high && a[left] <= pivot)
             left++;
 
         // Move right pointer until finding an element smaller than pivot
-        while (a[right] >= pivot && right >= low)
+        while ( right >= low && a[right] >= pivot)
             right--;
 
         // If pointers haven't crossed, swap mismatched elements
-        if (left > right) break;
+        if (left < right) {
         swap(a[left], a[right]);
+}
     }
 
     // Place pivot at its correct sorted position
